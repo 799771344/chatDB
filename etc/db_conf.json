@@ -1,0 +1,20 @@
+{
+  "conn_all": [
+    {
+      "db": {
+        "name": "\u76d1\u63a7",
+        "host": "100.65.202.29",
+        "port": 3643,
+        "user": "data_service_2",
+        "password": "data_service_2",
+        "database": "tme_monitor"
+      },
+      "ssh": {
+        "host": "9.134.84.76",
+        "port": 36000,
+        "username": "user_01",
+        "password": "Music@2017"
+      }
+    }
+  ]
+}

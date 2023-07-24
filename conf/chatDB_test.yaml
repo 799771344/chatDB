@@ -1,0 +1,8 @@
+database:
+  host: 100.65.202.29
+  port: 3643
+  user: data_service_2
+  password: data_service_2
+server:
+  host: 0.0.0.0
+  port: 8005

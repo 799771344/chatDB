@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatDB</title>
+    <link rel="stylesheet" href="css/a.css">
+    <script src="js/req_api.js"></script>
+    <script>
+        // 阻止默认右键菜单弹出
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="section1">
+        <div class="brandLogo___uAMRL">
+            <img src="img/logo.e1b3844e.webp" alt="" class="img">
+        </div>
+        <div class="brandLogo___uAMRL1" onclick="getTables(this)">
+            <span class="img1">tables</span>
+        </div>
+        <div class="brandLogo___uAMRL1" onclick="getConf(this)">
+            <span class="img1">all</span>
+        </div>
+        <div class="brandLogo___uAMRL1" onclick="changeColor(this)">
+            <span class="img1">github</span>
+        </div>
+    </div>
+    <div class="layoutRight___fIrFq">
+        <div class="componentBox___XjmnM" style="display: none;">
+            <div class="section2">
+                <div class="pageTitle___Y996D">表</div>
+                <div>
+                    <ul class="menuBox___ryfVe"></ul>
+                </div>
+            </div>
+            <div class="section3">
+                <textarea id="myTextarea" class="myTextarea" cols="40" rows="5"></textarea>
+                <button class="execute" onclick="getSelectedText()">执行</button>
+                <table id="data-table" class="data-table">
+                </table>
+            </div>
+        </div>
+        <div class="componentBox___XjmnM">
+            <div class="section2">
+                <div class="pageTitle___Y996D">连接</div>
+                <div>
+                    <ul class="menuBox___ryfVe"></ul>
+                </div>
+            </div>
+            <div class="section3"></div>
+        </div>
+        <div class="componentBox___XjmnM" style="display: none;">
+            <div class="section2">
+                <div class="pageTitle___Y996D">连接</div>
+                <div>
+                    <ul class="menuBox___ryfVe"></ul>
+                </div>
+            </div>
+            <div class="section3"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

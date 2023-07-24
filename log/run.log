@@ -1,0 +1,134 @@
+2023-07-18 14:44:27,334 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:45:41,179 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:46:42,359 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:46:42,853 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 14:46:48,028 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:46:49,436 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 14:55:19,823 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:55:20,377 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 14:55:26,067 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u6570\u636e\u5e93\u4e0b\u7684\u6240\u6709\u8868"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 14:55:26,535 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:39:11,605 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u8868\u7ed3\u6784"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:39:13,431 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:42:46,559 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u8868\u7ed3\u6784\u4ee5\u53ca\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:42:49,118 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:43:28,562 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u8868\u7ed3\u6784\u4ee5\u53ca\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:43:29,673 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:44:38,312 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)\uff0c\u4e0d\u9700\u8981\u505a\u8fc7\u591a\u7684\u89e3\u91ca\uff0c\u53ea\u9700\u8981\u6309\u7167\u6211\u6240\u5b9a\u4e49\u7684\u56de\u590d"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u8868\u7ed3\u6784\u4ee5\u53ca\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:44:39,276 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:44:44,404 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)\uff0c\u4e0d\u9700\u8981\u505a\u8fc7\u591a\u7684\u89e3\u91ca\uff0c\u53ea\u9700\u8981\u6309\u7167\u6211\u6240\u5b9a\u4e49\u7684\u56de\u590d"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u8868\u7ed3\u6784\u4ee5\u53ca\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:44:46,626 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 200 (char 199)
+
+2023-07-18 15:44:46,807 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 199 (char 198)
+
+2023-07-18 15:44:48,232 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:46:37,508 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)\uff0c\u4e0d\u9700\u8981\u505a\u8fc7\u591a\u7684\u89e3\u91ca\uff0c\u53ea\u9700\u8981\u6309\u7167\u6211\u6240\u5b9a\u4e49\u7684\u56de\u590d"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:46:39,997 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
+2023-07-18 15:47:24,843 | DEBUG | request_utils.py:19 | request status=200, url=https://www.chatgptplus.one/v1/chat/completions, data={"messages": [{"role": "system", "content": "\u5047\u8bbe\u4f60\u662f\u4e2aSQL\u7f16\u8f91\u5668\uff0c\u63a5\u4e0b\u6765\u4f60\u8fd4\u56de\u7684SQL\u4ee3\u7801\u8981\u548c\u5176\u4ed6\u5185\u5bb9\u5206\u9694\uff0c\u975eSQL\u4ee3\u7801\u5185\u5bb9\u7684\u6bcf\u4e00\u884c\u524d\u9762\u8ffd\u52a0-- \n\u8bf7\u6839\u636e\u4ee5\u4e0btable properties\u548cSQL input\u5c06\u81ea\u7136\u8bed\u8a00\u8f6c\u6362\u6210SQL\u67e5\u8be2. \nMYSQL SQL tables, with their properties:\nauth_group(id, name)\nauth_user_user_permissions(id, user_id, permission_id)\nclickhouse_mysql_table(int_id, float)\nauth_user(id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined, pwd_lock, pwd_last_modify)\nauth_permission(id, name, content_type_id, codename)\nauth_user_groups(id, user_id, group_id)\naccount_userprofile(id, Fdepartment, user_id)\nauth_group_permissions(id, group_id, permission_id)\uff0c\u4e0d\u9700\u8981\u505a\u8fc7\u591a\u7684\u89e3\u91ca\uff0c\u53ea\u9700\u8981\u6309\u7167\u6211\u6240\u5b9a\u4e49\u7684\u56de\u590d"}, {"role": "user", "content": "\u83b7\u53d6\u67d0\u4e2a\u8868\u7684\u5b57\u6bb5\u63cf\u8ff0"}], "model": "gpt-3.5-turbo", "stream": true, "temperature": 1, "top_p": 1}
+2023-07-18 15:47:27,522 | DEBUG | logic.py:50 | Traceback (most recent call last):
+  File "E:/work/chatDB/chatDB/logic.py", line 44, in chatGpt
+    chunk = json.loads(chunk)
+  File "D:\工作\python\python3.7.5\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\工作\python\python3.7.5\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 189 (char 188)
+
